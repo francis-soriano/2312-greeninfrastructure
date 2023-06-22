@@ -12,6 +12,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif}
 
 body, html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5%;
   height: 100%;
   line-height: 1.8;
 }
@@ -46,6 +47,7 @@ body, html {
       <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-map"></i> PROJECT</a>
       <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TEAM</a>
       <a href="#method" class="w3-bar-item w3-button"><i class="fa fa-th"></i> METHODOLOGY</a>
+      <a href="https://experience.arcgis.com/experience/8dc0b2c2b8814fe898b3767e898e9d05" class="w3-bar-item w3-button" target="_blank"><i class="fa fa-location-arrow"></i> WEB APPLICATION</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -58,11 +60,9 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">PROJECT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#method" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-map"></i> PROJECT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-users"></i> TEAM</a>
+      <a href="#method" class="w3-bar-item w3-button"><i class="fa fa-th"></i> METHODOLOGY</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -71,7 +71,8 @@ body, html {
     <span class="w3-jumbo w3-hide-small">Sink or Swim: Integrating Deep Learning and LiDAR for Flood Planning in Cobourg</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">Sink or Swim: Integrating Deep Learning and LiDAR for Flood Planning in Cobourg</span><br>
     <span class="w3-large">A Collaborative Project with Sustainable Coburg, Ganaraska Region Conservation Authority, and Fleming GIS</span>
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about our project!</a></p>
+    <p><a href="#about" class="w3-button w3-white w3-hover-opacity-off">Learn more about our project!</a></p>
+    <p><a href="https://experience.arcgis.com/experience/8dc0b2c2b8814fe898b3767e898e9d05" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">View Our Interactive Application here!</a></p>
   </div> 
 </header>
 
@@ -81,22 +82,22 @@ body, html {
   <p class="w3-center w3-large">Our project investigated the feasibility of low impact development (green water infrastructure) for Cobourg and its surrounding communities.</p>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
-      <img src="images/lidar.png" alt="A screenshot of LiDAR from ArcGIS Pro" style="max-width: 100%; height: auto;">
+      <a href="#mclassify"><img src="images/lidar.png" alt="A screenshot of LiDAR from ArcGIS Pro" style="max-width: 100%; height: auto;"></a>
       <p class="w3-large">Deliverable 1: Classifying LiDAR</p>
       <p>By classifying LiDAR data, tree cover can be visualized in the study area.</p>
     </div>
     <div class="w3-quarter">
-      <img src="images/flowpaths.png" alt="A screenshot of flowpaths layer from ArcGIS Pro" style="max-width: 100%; height: auto;">
+      <a href="#mhdems"><img src="images/flowpaths.png" alt="A screenshot of flowpaths layer from ArcGIS Pro" style="max-width: 100%; height: auto;"></a>
       <p class="w3-large">Deliverable 2: Hydrologically-Conditioning DEMs</p>
       <p>Hydrologically-conditioning DEMs can accurately depict the flow of surface water for the study area.</p>
     </div>
     <div class="w3-quarter">
-      <img src="images/suitability.png" alt="A screenshot of suitability layers from ArcGIS Pro" style="max-width: 100%; height: auto;">
+      <a href="#manalysis"><img src="images/suitability.png" alt="A screenshot of suitability layers from ArcGIS Pro" style="max-width: 100%; height: auto;"></a>
       <p class="w3-large">Deliverable 3: Suitability Analysis</p>
       <p>Through a multi-criteria decision analysis, suitability of various green water infrastructure was determined.</p>
     </div>
     <div class="w3-quarter">
-      <img src="images/application.png" alt="A screenshot of the interactive web application" style="max-width: 100%; height: auto;">
+      <a href="#mapplication"><img src="images/application.png" alt="A screenshot of the interactive web application" style="max-width: 100%; height: auto;"></a>
       <p class="w3-large">Deliverable 4: Interactive Web Application</p>
       <p>All these findings were published on an interactive interface for public use.</p>
     </div>
@@ -109,7 +110,7 @@ body, html {
     <div class="w3-col m6">
       <h2>What is green water infrastructure?</h2>
       <p>Low impact development, such as green water infrastructure, are sustainable urban planning approaches that minimize the negative impact of urbanization on nature. They utilize techniques such as rain gardens, permeable pavements, and bioswales to manage stormwater and improve water quality, while creating resilient communities. These approaches are crucial for sustainable urban development in the face of climate change and extreme weather events.</p>
-      <p><a href="https://experience.arcgis.com/experience/8dc0b2c2b8814fe898b3767e898e9d05/page/Bioswales/?draft=true" target="_blank" class="w3-button w3-black"><i class="fa fa-globe"> </i> View the interactive web application!</a></p>
+      <p><a href="https://experience.arcgis.com/experience/8dc0b2c2b8814fe898b3767e898e9d05" target="_blank" class="w3-button w3-black"><i class="fa fa-location-arrow"> </i> View the interactive web application!</a></p>
     </div>
     <div class="w3-col m6">
       <img class="w3-image w3-round-large" src="images/gwi.png" alt="Examples of green water infrastructure" width="700" height="394">
@@ -159,55 +160,65 @@ body, html {
 
 <!-- Methodology Section -->
 <div class="w3-container w3-light-grey " style="padding:128px 32px" id="method">
-  <h2 class="w3-center">METHODOLOGY</h2>
-  <!-- first row -->
-  <div class="w3-row">
-    <div class="w3-third w3-container">
-      <p>lorem ipsum image place holder</p>
+  <div class="w3-padding-24 w3-center">
+    <h2 class="w3-center">METHODOLOGY</h2>
+  </div>
+  <!-- data collection row-->
+  <div class="w3-row w3-padding-48" style="padding-left:10%; padding-right:10%;" id="mcollect">
+    <div class="w3-third w3-container w3-center">
+      <img src="images/flowchart.png" width="80%">
     </div>
-    <div class="w3-twothird w3-container w3-red">
-      <h2>w3-twothird</h2>  
-      <p>The w3-twothird class uses 66% of the parent container.</p>
-      <p>On screens smaller than 601 pixels it resizes to full screen.</p>
+    <div class="w3-twothird w3-container">
+      <h3>Data Collection</h3>  
+      <p>The project obtained data from the Ganaraska Region Conservation Authority and supplemented it with additional data from publicly available open-source repositories, including the Open Data Dashboard for the Town of Cobourg, the Government of Ontario's Land Information Office (LIO), and Open Street Map (OSM). Digital elevation models (DEMs) were derived from the 2018 South Central Ontario Orthophotography (SCOOP) dataset, captured by the Vexcel UltraCam Eagle sensor. To ensure accurate flood mapping, the DEMs were hydrologically-conditioned using geoprocessing techniques to account for surface runoff and watershed delineation. These hydrologically-conditioned DEMs (hDEMs) served as a fundamental basis for the flood analysis of the Town of Cobourg, providing more accurate identification of flood-prone areas and supporting the development of flood mitigation strategies.</p>
+      <p>LiDAR data, captured by Airborne Imaging Inc. on behalf of the MNRF and OMAFRA, was used for point cloud data. The original LiDAR imagery, captured in spring 2017, was compressed into a 7 GB LAZ file format. The point cloud data underwent further classification beyond the minimum prescribed by the USGS, allowing for more refined segmentation into distinct classes based on the research objectives and requirements. This additional classification was done to ensure the suitability of the point cloud data for analysis and evaluation purposes. The combination of DEMs and classified point cloud data provided a comprehensive dataset for the project's objectives, facilitating effective flood analysis, and informing the development of flood management strategies.</p>
     </div>
   </div>
-    <!-- second row -->
-    <div class="w3-row">
-      <div class="w3-third w3-container">
-        <h2>w3-third</h2>
-        <p>lorem ipsum image place holder</p>
+  <!-- las classification row -->
+  <div class="w3-row w3-padding-48" style="padding-left:10%; padding-right:10%;" id="mclassify">
+    <div class="w3-third w3-container w3-center">
+      <img src="images/lidar1.png" width="80%">
+    </div>
+    <div class="w3-twothird w3-container">
+      <h3>Classifying LiDAR / LAS Classification</h3>  
+      <p>To ensure accurate site suitability assessments for green water infrastructure, an understanding of existing vegetation and tree canopy distribution is important. While conventional approaches rely on imagery and infrared data to derive NDVI values, our proof-of-concept aimed to explore the feasibility of using LiDAR point clouds for enhanced accuracy. The decision to use LiDAR was motivated by its higher resolution compared to SCOOP imagery, along with the advantage of capturing data during the leaf-on summer season instead of the leaf-off spring season. Initially, the plan involved employing deep learning-assisted image segmentation and classification using object-based image analysis (OBIA) techniques for tree cover visualization. However, this approach was abandoned due to limitations associated with SCOOP imagery. Instead, we adopted a point cloud classification methodology using deep learning techniques within ArcGIS. The implementation leveraged pre-trained PointCNN models provided by ESRI, requiring machines with dedicated graphics cards for the computationally intensive process.</p>
+      <p>During a preliminary test, it was discovered that the Esri tree classification model tended to be overly aggressive, misclassifying power lines and building sides as trees. To address this issue, the workflow was modified by incorporating additional classification steps. A separate deep learning package was employed to identify power lines from the classified point cloud data. Following successful tree classification in the point cloud, feature class extraction was performed. To streamline the processing for the extensive quantity of point clouds involved in the project, we developed a script for automation. This script combined LAS files into a LAS dataset, executed various deep learning models and other necessary tools, and generated the required outputs. By running the script concurrently on five different machines, we could process LAS files simultaneously and expedite the overall workflow. Overnight execution of the script successfully produced the desired results for this project.</p>
+    </div>
+  </div>
+    <!-- hdem row -->
+    <div class="w3-row w3-padding-48" style="padding-left:10%; padding-right:10%;" id="mhdems">
+      <div class="w3-third w3-container w3-center">
+        <img src="images/flowpaths2.png" width="95%">
       </div>
-      <div class="w3-twothird w3-container w3-red">
-        <h2>w3-twothird</h2>  
-        <p>The w3-twothird class uses 66% of the parent container.</p>
-        <p>On screens smaller than 601 pixels it resizes to full screen.</p>
+      <div class="w3-twothird w3-container">
+        <h3>Hydrologically-Conditioning Digital Elevation Models</h3>  
+        <p>The project required the production of a hydrologically conditioned Digital Elevation Model (hDEM) that accurately represents water movement. The Agricultural Conservation Planning Framework (ACPF) Toolbox was employed to construct the hDEM. The Identify Impeded Flow tool helped identify suitable culvert locations, while the Visualize Flowpaths tool generated a vectorized representation of flow accumulation, filtering out smaller paths. The Manual Cutter and Dam Builder tool, along with digitized culverts, adjusted the DEM by lowering elevations at culvert locations. Multiple iterations were performed to identify all culvert locations, and the final hDEM included areas with impeded flow caused by storm ponds and road sections with storm drains. The Visualize Flow Paths tool was used to generate vectorized flow accumulation data, categorized into low, medium, and high flow streams. </p>
+        <p>The toolbox's Identify Impeded Flow tool helped identify the locations of culverts, while the Visualize Flowpaths tool produced vectorized flow accumulation data by removing smaller paths. The Manual Cutter and Dam Builder tool, combined with culvert digitization, adjusted the DEM and generated a flow accumulation raster. Multiple iterations were performed to identify all culvert locations, and the final hDEM incorporated areas with impeded flow caused by storm ponds and road sections with storm drains. The Visualize Flow Paths tool was used to categorize streams into different flow levels, enabling the creation of a stream network with stream order for analysis and visualization purposes. </p>
       </div>
     </div>
-    <!-- third row -->
-    <div class="w3-row">
-      <div class="w3-third w3-container">
-        <h2>w3-third</h2>
-        <p>lorem ipsum image place holder</p>
+    <!-- suitability analysis row -->
+    <div class="w3-row w3-padding-48" style="padding-left:10%; padding-right:10%;" id="manalysis">
+      <div class="w3-third w3-container w3-center">
+        <img src="images/suitability01.png" width="90%">
       </div>
-      <div class="w3-twothird w3-container w3-red">
-        <h2>w3-twothird</h2>  
-        <p>The w3-twothird class uses 66% of the parent container.</p>
-        <p>On screens smaller than 601 pixels it resizes to full screen.</p>
-      </div>
-    </div>
-    <!-- fourth row -->
-    <div class="w3-row">
-      <div class="w3-third w3-container">
-        <h2>w3-third</h2>
-        <p>lorem ipsum image place holder</p>
-      </div>
-      <div class="w3-twothird w3-container w3-red">
-        <h2>w3-twothird</h2>  
-        <p>The w3-twothird class uses 66% of the parent container.</p>
-        <p>On screens smaller than 601 pixels it resizes to full screen.</p>
+      <div class="w3-twothird w3-container">
+        <h3>Suitability Analysis/Multi-Criteria Decision Analysis</h3>  
+        <p>Spatial analysis using ArcGIS Pro and the Analytic Hierarchy Process (AHP) evaluated suitable locations for rain gardens and bioswales in a study area. Steps included clipping relevant data layers, calculating Euclidean distances, reclassifying data layers based on AHP weights, and applying the Weighted Overlay tool to generate a suitability map. This systematic approach supported decision-making for effective stormwater management and environmental sustainability. </p>
+        <p>The analysis results indicate that the most suitable areas for rain gardens are those in close proximity to buildings within urban areas. These locations offer the advantage of effectively managing stormwater runoff from rooftops and paved areas, as they minimize water travel distance. Conversely, areas located far from the city are considered less suitable due to limited infrastructure and reduced access to runoff sources. This information guides decision-makers and urban planners in prioritizing suitable locations for rain garden implementation. Regarding bioswales, the analysis reveals that optimal areas for their implementation are closer to roads and within urban centers. These locations have a higher potential for capturing and treating stormwater runoff due to their proximity to impervious surfaces. In contrast, areas farther from the city center contribute less to runoff and are less suitable. </p>
       </div>
     </div>
-</div>
+    <!-- web application row -->
+    <div class="w3-row w3-padding-48" style="padding-left:10%; padding-right:10%;" id="mapplication">
+      <div class="w3-third w3-container w3-center">
+        <img src="images/suitability1.png" width="90%">
+      </div>
+      <div class="w3-twothird w3-container">
+        <h3>Interactive Web Application</h3>  
+        <p>To facilitate a user-friendly experience, the interactive web application was done through ArcGIS Online's Experience Builder. Separate web maps were created for the analysis of rain gardens and bioswales, even though they shared the same layers and symbology. This allowed users to switch between the two types of green water infrastructure seamlessly, enhancing usability. The web maps incorporated layers such as Flow Accumulation (high, medium, and low), Tree Cover, and Suitability for bioswales or rain gardens. </p>     </p>
+        <p>By transforming feature classes into tile layers and uploading them onto ArcGIS Online; this optimization step helped conserve storage space. Additionally, the layers' visible range was configured to specific scales to ensure efficient performance: 1:160,000 for cities and 1:800 for small buildings. The team utilized ArcGIS Pro, a software offering greater flexibility for cartographic outputs, to create the initial maps. The Esri's Light Gray base map provided simplicity and a lack of intricate details, making it an ideal backdrop for the suitability layers. The suitability layers were designed using a 5-color yellow-green palette, with green representing the highest suitability. Unsuitable areas were intentionally excluded, as their absence implicitly conveyed their unsuitability. The tree layer adhering to cartographic conventions remained green but was given a darker shade to differentiate it from the suitability layer. </p>
+        <p><a href="https://experience.arcgis.com/experience/8dc0b2c2b8814fe898b3767e898e9d05" target="_blank" class="w3-button w3-black"><i class="fa fa-location-arrow"> </i> View the interactive web application!</a></p>
+      </div>
+    </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
@@ -215,14 +226,6 @@ body, html {
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
